@@ -1,0 +1,4 @@
+node_modules/
+package-lock.json
+.ask/
+.DS_Store

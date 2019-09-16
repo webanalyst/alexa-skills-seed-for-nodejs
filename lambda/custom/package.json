@@ -1,0 +1,17 @@
+{
+  "name": "alexa-skills-seed-for-nodejs",
+  "version": "1.0.0",
+  "description": "Boilerplate Alexa Skill for NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eugen Marius Circiu <marius@circiu.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "ask-sdk-core": "~2.7.0",
+    "ask-sdk-dynamodb-persistence-adapter": "~2.7.0",
+    "ask-sdk-model": "~1.19.0",
+    "aws-sdk": "~2.528.0"
+  }
+}

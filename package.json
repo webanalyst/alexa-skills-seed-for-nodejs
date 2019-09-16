@@ -1,0 +1,13 @@
+{
+  "name": "alexa-skills-seed-for-nodejs",
+  "version": "1.0.0",
+  "description": "Boilerplate Alexa Skill for NodeJS",
+  "scripts": {
+    "init": "ask init",
+    "deploy": "ask deploy",
+    "test": "node ./lambda/custom/index.js",
+    "dialog": "ask dialog --locale=en-US"
+  },
+  "author": "Eugen Marius Circiu <marius@circiu.com>",
+  "license": "Apache-2.0"
+}

@@ -1,0 +1,60 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "This is a sample Alexa skill.",
+          "examplePhrases": [
+            "Alexa, open sample skill.",
+            "Alexa, play sample skill."
+          ],
+          "keywords": [
+            "Descriptive_Phrase_1",
+            "Descriptive_Phrase_2",
+            "Descriptive_Phrase_3"
+          ],
+          "name": "alexa-skills-seed",
+          "description": "Sample Full Description",
+          "updatesDescription": "This skill has updates that fix feature bugs."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Sample Testing Instructions.",
+      "category": "COMMUNICATION",
+      "distributionCountries": [
+        "US"
+      ]
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda/custom",
+          "uri": "alexa-skills-seed-default"
+        },
+        "regions": {
+          "NA": {
+            "endpoint": {
+              "sslCertificateType": "Trusted",
+              "sourceDir": "lambda/custom",
+              "uri": "alexa-skills-seed-default"
+            }
+          }
+        }
+      }
+    },
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "usesPersonalInfo": false,
+      "isChildDirected": false,
+      "isExportCompliant": true,
+      "containsAds": false,
+      "locales": {
+        "en-US": {
+          "privacyPolicyUrl": "http://www.myprivacypolicy.example.com",
+          "termsOfUseUrl": "http://www.termsofuse.example.com"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}
