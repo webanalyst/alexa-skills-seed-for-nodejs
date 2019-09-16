@@ -1,4 +1,4 @@
-node_modules/
-package-lock.json
-.ask/
+/lambda/custom/node_modules
+/lambda/custom/package-lock.json
 .DS_Store
+package-lock.json
