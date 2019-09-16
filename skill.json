@@ -16,13 +16,29 @@
           "name": "alexa-skills-seed",
           "description": "Sample Full Description",
           "updatesDescription": "This skill has updates that fix feature bugs."
+        },
+        "es-ES": {
+          "summary": "This is a sample Alexa skill.",
+          "examplePhrases": [
+            "Alexa, open sample skill.",
+            "Alexa, play sample skill."
+          ],
+          "keywords": [
+            "Descriptive_Phrase_1",
+            "Descriptive_Phrase_2",
+            "Descriptive_Phrase_3"
+          ],
+          "name": "alexa-skills-seed",
+          "description": "Sample Full Description",
+          "updatesDescription": "This skill has updates that fix feature bugs."
         }
       },
       "isAvailableWorldwide": true,
       "testingInstructions": "Sample Testing Instructions.",
       "category": "COMMUNICATION",
       "distributionCountries": [
-        "US"
+        "US", 
+        "ES"
       ]
     },
     "apis": {
@@ -36,7 +52,21 @@
             "endpoint": {
               "sslCertificateType": "Trusted",
               "sourceDir": "lambda/custom",
-              "uri": "alexa-skills-seed-default"
+              "uri": "alexa-skills-seed-default-na"
+            }
+          },
+          "EU": {
+            "endpoint": {
+              "sslCertificateType": "Trusted",
+              "sourceDir": "lambda/custom",
+              "uri": "alexa-skills-seed-default-eu"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "sslCertificateType": "Trusted",
+              "sourceDir": "lambda/custom",
+              "uri": "alexa-skills-seed-default-fe"
             }
           }
         }
@@ -50,6 +80,10 @@
       "containsAds": false,
       "locales": {
         "en-US": {
+          "privacyPolicyUrl": "http://www.myprivacypolicy.example.com",
+          "termsOfUseUrl": "http://www.termsofuse.example.com"
+        },
+        "es-ES": {
           "privacyPolicyUrl": "http://www.myprivacypolicy.example.com",
           "termsOfUseUrl": "http://www.termsofuse.example.com"
         }
