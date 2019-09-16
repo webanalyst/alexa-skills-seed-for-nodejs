@@ -1,1 +1,8 @@
-{}
+{
+  "deploy_settings": {
+    "default": {
+      "skill_id": "",
+      "merge": {}
+    }
+  }
+ }
