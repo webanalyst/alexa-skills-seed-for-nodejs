@@ -15,7 +15,9 @@
           ],
           "name": "alexa-skills-seed",
           "description": "Sample Full Description",
-          "updatesDescription": "This skill has updates that fix feature bugs."
+          "updatesDescription": "This skill has updates that fix feature bugs.",
+          "smallIconUri": "file://assets/images/en-US_smallIcon.png",
+          "largeIconUri": "file://assets/images/en-US_largeIcon.png"
         },
         "es-ES": {
           "summary": "This is a sample Alexa skill.",
@@ -30,14 +32,16 @@
           ],
           "name": "alexa-skills-seed",
           "description": "Sample Full Description",
-          "updatesDescription": "This skill has updates that fix feature bugs."
+          "updatesDescription": "This skill has updates that fix feature bugs.",
+          "smallIconUri": "file://assets/images/es-ES_smallIcon.png",
+          "largeIconUri": "file://assets/images/es-ES_largeIcon.png"
         }
       },
-      "isAvailableWorldwide": true,
+      "isAvailableWorldwide": false,
       "testingInstructions": "Sample Testing Instructions.",
       "category": "COMMUNICATION",
       "distributionCountries": [
-        "US", 
+        "US",
         "ES"
       ]
     },
@@ -45,7 +49,7 @@
       "custom": {
         "endpoint": {
           "sourceDir": "lambda/custom",
-          "uri": "alexa-skills-seed-default"
+          "uri": "alexa-skills-seed-default-eu"
         },
         "regions": {
           "NA": {
