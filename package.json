@@ -4,7 +4,7 @@
   "description": "Boilerplate Alexa Skill for NodeJS",
   "scripts": {
     "init": "ask init",
-    "deploy": "ask deploy --force",
+    "deploy": "cd ./lambda/custom&&npm install&&cd ../..&&ask deploy --force",
     "diff": "ask diff",
     "test": "node ./lambda/custom/index.js",
     "dialog": "ask dialog --locale=en-US",
