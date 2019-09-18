@@ -5,11 +5,11 @@ const CancelAndStopIntentHandler = {
           || handlerInput.requestEnvelope.request.intent.name === 'AMAZON.StopIntent');
     },
     handle(handlerInput) {
-      const speechText = 'Goodbye!';
+      const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
+      const speechText = requestAttributes.t('EXIT_MESSAGE');
   
       return handlerInput.responseBuilder
         .speak(speechText)
-        .withSimpleCard('Hello World', speechText)
         .getResponse();
     },
 };

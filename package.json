@@ -4,7 +4,7 @@
   "description": "Boilerplate Alexa Skill for NodeJS",
   "scripts": {
     "init": "ask init",
-    "deploy": "ask deploy --force --debug",
+    "deploy": "ask deploy --force",
     "diff": "ask diff",
     "test": "node ./lambda/custom/index.js",
     "dialog": "ask dialog --locale=en-US",
@@ -12,7 +12,8 @@
     "validate-es": "ask validate --skill-id=$(sed -n 's|.*\"skill_id\": \"\\([^\"]*\\)\".*|\\1|p' .ask/config) --locales=es-ES",
     "list-beta-testers": "ask api list-beta-testers --skill-id=$(sed -n 's|.*\"skill_id\": \"\\([^\"]*\\)\".*|\\1|p' .ask/config)",
     "start-beta-test": "ask api start-beta-test --skill-id=$(sed -n 's|.*\"skill_id\": \"\\([^\"]*\\)\".*|\\1|p' .ask/config)",
-    "end-beta-test": "ask api end-beta-test --skill-id=$(sed -n 's|.*\"skill_id\": \"\\([^\"]*\\)\".*|\\1|p' .ask/config)"
+    "end-beta-test": "ask api end-beta-test --skill-id=$(sed -n 's|.*\"skill_id\": \"\\([^\"]*\\)\".*|\\1|p' .ask/config)",
+    "list-skills": "ask api list-skills"
   },
   "author": "Eugen Marius Circiu <marius@circiu.com>",
   "license": "Apache-2.0"

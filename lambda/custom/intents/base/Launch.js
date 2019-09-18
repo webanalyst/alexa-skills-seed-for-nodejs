@@ -3,12 +3,12 @@ const LaunchRequestHandler = {
       return handlerInput.requestEnvelope.request.type === 'LaunchRequest';
     },
     handle(handlerInput) {
-      const speechText = 'Welcome to the Alexa Skills Kit, you can say hello!';
+      const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
+      const speechText = requestAttributes.t('WELCOME_MESSAGE');
   
       return handlerInput.responseBuilder
         .speak(speechText)
         .reprompt(speechText)
-        .withSimpleCard('Hello World', speechText)
         .getResponse();
     },
 };

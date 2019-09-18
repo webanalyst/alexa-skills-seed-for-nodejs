@@ -1,8 +1,60 @@
 {
   "deploy_settings": {
     "default": {
-      "skill_id": "",
-      "merge": {}
+      "skill_id": "amzn1.ask.skill.b47c71a7-f92e-4e1f-8023-749086e8473a",
+      "merge": {},
+      "resources": {
+        "manifest": {
+          "eTag": "99439eb673157ef9363ca4e20f326fe5"
+        },
+        "interactionModel": {
+          "en-US": {
+            "eTag": "6efa7964d1fcf04e24910e1bed2d9505"
+          },
+          "es-ES": {
+            "eTag": "6efa7964d1fcf04e24910e1bed2d9505"
+          }
+        },
+        "lambda": [
+          {
+            "alexaUsage": [
+              "custom/default",
+              "custom/EU"
+            ],
+            "arn": "arn:aws:lambda:eu-west-1:630598755106:function:alexa-skills-seed-default-eu",
+            "awsRegion": "eu-west-1",
+            "codeUri": "lambda/custom",
+            "functionName": "alexa-skills-seed-default-eu",
+            "handler": "index.handler",
+            "revisionId": "b5548b0d-3cca-493e-9d1b-e0e634b3a560",
+            "runtime": "nodejs8.10"
+          },
+          {
+            "alexaUsage": [
+              "custom/NA"
+            ],
+            "arn": "arn:aws:lambda:us-east-1:630598755106:function:alexa-skills-seed-default-na",
+            "awsRegion": "us-east-1",
+            "codeUri": "lambda/custom",
+            "functionName": "alexa-skills-seed-default-na",
+            "handler": "index.handler",
+            "revisionId": "5087da5a-8f7e-4952-8455-14fe69513917",
+            "runtime": "nodejs8.10"
+          },
+          {
+            "alexaUsage": [
+              "custom/FE"
+            ],
+            "arn": "arn:aws:lambda:us-west-2:630598755106:function:alexa-skills-seed-default-fe",
+            "awsRegion": "us-west-2",
+            "codeUri": "lambda/custom",
+            "functionName": "alexa-skills-seed-default-fe",
+            "handler": "index.handler",
+            "revisionId": "81ce20b9-dc5f-4abb-aa0b-69fd974bc2b5",
+            "runtime": "nodejs8.10"
+          }
+        ]
+      }
     }
   }
 }

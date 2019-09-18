@@ -4,12 +4,12 @@ const HelpIntentHandler = {
         && handlerInput.requestEnvelope.request.intent.name === 'AMAZON.HelpIntent';
     },
     handle(handlerInput) {
-      const speechText = 'You can say hello to me!';
+      const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
+      const speechText = requestAttributes.t('HELP_MESSAGE');
   
       return handlerInput.responseBuilder
         .speak(speechText)
         .reprompt(speechText)
-        .withSimpleCard('Hello World', speechText)
         .getResponse();
     },
 };

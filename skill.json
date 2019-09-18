@@ -16,8 +16,8 @@
           "name": "alexa-skills-seed",
           "description": "Sample Full Description",
           "updatesDescription": "This skill has updates that fix feature bugs.",
-          "smallIconUri": "file://assets/images/en-US_smallIcon.png",
-          "largeIconUri": "file://assets/images/en-US_largeIcon.png"
+          "smallIconUri": "https://raw.githubusercontent.com/webanalyst/alexa-skills-seed-for-nodejs/master/assets/images/en-US_smallIcon.png",
+          "largeIconUri": "https://raw.githubusercontent.com/webanalyst/alexa-skills-seed-for-nodejs/master/assets/images/en-US_largeIcon.png"
         },
         "es-ES": {
           "summary": "This is a sample Alexa skill.",
@@ -33,8 +33,8 @@
           "name": "alexa-skills-seed",
           "description": "Sample Full Description",
           "updatesDescription": "This skill has updates that fix feature bugs.",
-          "smallIconUri": "file://assets/images/es-ES_smallIcon.png",
-          "largeIconUri": "file://assets/images/es-ES_largeIcon.png"
+          "smallIconUri": "https://raw.githubusercontent.com/webanalyst/alexa-skills-seed-for-nodejs/master/assets/images/es-ES_smallIcon.png",
+          "largeIconUri": "https://raw.githubusercontent.com/webanalyst/alexa-skills-seed-for-nodejs/master/assets/images/es-ES_largeIcon.png"
         }
       },
       "isAvailableWorldwide": false,

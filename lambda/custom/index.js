@@ -3,6 +3,9 @@
 
 const Alexa = require("ask-sdk-core");
 
+// Translation Service
+const LocalizationInterceptor = require("./interceptors/localizationInterceptor");
+
 const BaseHandlers = require("./intents/base/index");
 const ErrorHandler = require("./intents/Error");
 
@@ -10,6 +13,8 @@ const ErrorHandler = require("./intents/Error");
 // Interceptors
 const RequestInterceptor = require("./interceptors/Request");
 const ResponseInterceptor = require("./interceptors/Response");
+
+
 
 
 const HelloWorldIntentHandler = {
@@ -35,7 +40,9 @@ exports.handler = skillBuilder
   )
   .withApiClient(new Alexa.DefaultApiClient())
   .addErrorHandlers(ErrorHandler)
-  .addRequestInterceptors(RequestInterceptor)
-  .addResponseInterceptors(ResponseInterceptor)
+  .addRequestInterceptors(LocalizationInterceptor)
+  .withCustomUserAgent('skill/seed/v1')
+  //.addRequestInterceptors(RequestInterceptor)
+  //.addResponseInterceptors(ResponseInterceptor)
   .lambda();
 
